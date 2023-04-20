@@ -1,0 +1,45 @@
+.toggle-play,
+.toggle-play i {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 30px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(180deg);
+}
+
+.toggle-play {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 12000;
+  border: none;
+  outline: none;
+  background: none;
+  color: var(--light);
+  box-shadow: none;
+  transition: .2s;
+}
+
+.toggle-play:hover {
+  color: var(--shadow);
+  border-right: 30px solid var(--shadow);
+  cursor: pointer;
+}
+
+.toggle-play i {
+  font-size: 24px;
+  color: #f8f8ff;
+}
+
+.fa {
+  font-size: 24px;
+}
+
+#sound:before {
+  content: "";
+}
+
